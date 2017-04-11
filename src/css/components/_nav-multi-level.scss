@@ -1,0 +1,62 @@
+@media screen and (max-width: 30em) {
+    /* Ebene 2, Menuepunkte einruecken */
+    .multi-level-nav ul ul li a {
+        padding-left: 2em;
+    }
+    /* Button verstecken */
+    .dropdown-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 30em) {
+    /* Liste Ebene 1 */
+    .multi-level-nav ul {}
+    .multi-level-nav li {
+        position: relative;
+    }
+    li.has-children>a {
+        padding-right: 0;
+    }
+    /* Ebene 2 ausblenden */
+    .multi-level-nav ul ul {
+        display: none;
+        position: absolute;
+        z-index: 100;
+    }
+    /* Liste Ebene 2 bekommt .toggled-on per JS */
+    .multi-level-nav ul .toggled-on {
+        display: block;
+    }
+    /* Listenelemente in Ebene 2 */
+    .multi-level-nav ul ul li {}
+    /* Ebene 1, Button mit Untermenü */
+    .dropdown-toggle {
+        margin: 0;
+        padding: 0 .5em;
+        border: 0;
+        font-family: 'FontAwesome';
+        content: "";
+        text-transform: lowercase;
+        /* Stop screen readers to read the text as capital letters */
+        background-color: transparent;
+    }
+    /* Button mit Pfeil nach unten */
+    .dropdown-toggle::after {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 42px;
+        color: white;
+        content: "\f107";
+        line-height: 1em;
+    }
+    .dropdown-toggle:hover,
+    .dropdown-toggle:focus {
+        background: hsl(0, 0%, 25%);
+    }
+    /* Button mit Pfeil nach oben, .toggle-on wird per JS eingefügt */
+    .dropdown-toggle.toggle-on:after {
+        content: "\f106";
+    }
+}

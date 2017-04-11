@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox - Navigation Multilevel</title>
+    <meta name="description" content="Flexbox Navigation Multilevel">
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Zum Inhalt springen</a>
+    <header class="pagehead">
+        <div class="centered">
+            <h1 class="site-title">Flexbox Navigation Multilevel</h1>
+        </div>
+        <!-- .centred -->
+    </header>
+    <!-- .pagehead -->
+
+    <main class="main-area" id="content">
+        <div class="centered">
+
+            <section class="menu-section">
+                <h2 class="menu-heading">Mehrere Ebenen (Multi-Level) - das etwas andere Dropdown</h2>
+
+                <nav id="multi-level-nav" class="multi-level-nav menu" role="navigation">
+                    <ul>
+                        <li><a href="#">Startseite</a></li>
+
+                        <li class="has-children">
+                            <a href="#">Kochen
+                                <button class="dropdown-toggle" aria-expanded="false">
+                                    <span class="screen-reader-text">Untermenü öffnen</span>
+                                </button>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Koch&nbsp;mieten</a></li>
+                                <li><a href="">Catering</a></li>
+                                <li><a href="">Restaurant</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-children">
+                            <a href="#">Kurse
+                                <button class="dropdown-toggle" aria-expanded="false">
+                                    <span class="screen-reader-text">Untermenü öffnen</span>
+                                </button>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Kursübersicht</a></li>
+                                <li><a href="#">Registrieren</a></li>
+                                <li><a href="#">Das Frühstück</a></li>
+                                <li><a href="#">Das Mittagessen</a></li>
+                                <li><a href="#">Das Abendessen</a></li>
+                                <li><a href="#">Einkaufen</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Über&nbsp;uns</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <!-- #multi-level-nav .multi-level-nav -->
+
+            </section>
+            <!-- .menu-section -->
+
+        </div>
+        <!-- .centered -->
+    </main>
+
+    <footer class="footer-area centered">
+    </footer>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/menu-toggle.js"></script>
+</body>
+
+</html>

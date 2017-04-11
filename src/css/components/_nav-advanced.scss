@@ -1,0 +1,44 @@
+/* Menuepunkte gestalten */
+
+.advanced-nav {
+    overflow: hidden;
+}
+
+.advanced-nav li a {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* da das umschließende li display:flex container ist, nehmen die a so die volle breite an */
+}
+
+.icon {
+    font-size: 1.8em;
+    flex: 0 0 1.5em;
+}
+
+.button-text {
+    font-size: 1.8em;
+}
+
+.button-text span {
+    display: block;
+    font-size: 40%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+/* Menu selbst gestalten */
+
+@media screen and (min-width: 30em) {
+    .advanced-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advanced-nav li {
+        flex: 1 0 12em;
+        display: flex;
+        /* der Inhalt bekommt automatisch die volle höhe */
+    }
+}

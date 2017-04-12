@@ -53,9 +53,11 @@ body {
     }
     .card {
         flex: 0 1 calc(50% - .5em);
-        margin-bottom: 1em;
         /* 0 = flex grow, mit bezug auf den dritten wert "calc(33% - 1em)" ist kein wachsen erlaub */
         /* 1 = flex shrink, mit bezug auf den dritten wert "calc(33% - 1em)" ist schrumpfen erlaubt */
+        margin-bottom: 1em;
+        display: flex;
+        /* hiermit werden die a zu flexitems und die stretchen vertikal und horizontal */
     }
 }
 

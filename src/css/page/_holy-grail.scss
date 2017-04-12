@@ -1,0 +1,78 @@
+.main-menu {
+    padding: .4em 1em;
+    color: white;
+    background: hsl(0, 0%, 20%);
+}
+
+.pagehead--holygrail {
+    padding: 0;
+    color: white;
+    background: hsl(0, 0%, 40%);
+}
+
+.post-content {
+    padding: 0 1.4em 1.4em;
+}
+
+.sidebar {
+    padding: .5em 1.4em 1em;
+    background: hsl(0, 0%, 80%);
+}
+
+.example-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.example-menu a {
+    display: block;
+    padding: .4em 0;
+    color: inherit;
+    text-decoration: none;
+    transition: all .5s ease;
+    &:hover,
+    &:focus {
+        padding: .4em 1em;
+        background: hsl(0, 0%, 20%);
+        color: white;
+    }
+}
+
+.footer-area {
+    padding: .4em 1em;
+    text-align: center;
+    background: hsl(0, 0%, 75%);
+}
+
+
+/* Flexbox Geschichten */
+
+@media screen and (min-width: 40em) {
+    .outer-wrap {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .content {
+        display: flex;
+        flex: 1 1 auto;
+        /* Der content soll in der breite und höhe wachsen koennen. So laesst dich der Sticky Footer realisieren.
+        /*------------------------------*/
+        /* flex-direction: row-reverse; */
+        /* Mit flex-direction row oder reverse kann die Anordnung der Elemente im content bestimmt werden.
+           Aber das ost nicht flexibel genug um genau zu bestimmen welches Element an
+           welcher Stelle stehen soll. Besser dazu ist order für die Flex items zu definieren. */
+    }
+    .main-area {
+        flex: 1 1 auto;
+    }
+    .post-content {
+        max-width: 40em;
+        margin: 0 auto;
+    }
+    .sidebar {
+        flex: 0 0 12em;
+        order: 1;
+    }
+}

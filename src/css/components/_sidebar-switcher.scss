@@ -1,0 +1,41 @@
+.sidebar-switcher {
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+    .sidebar-switcher {
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: .4em 1em;
+        color: hsl(0, 0%, 5%);
+        font-size: .8em;
+        font-weight: lighter;
+    }
+    .sidebar-switcher {
+        button {
+            color: hsl(0, 0%, 40%);
+            padding-left: .4em;
+        }
+    }
+    .sidebar-switcher {
+        button {
+            &:not([disabled]):hover,
+            &:focus {
+                color: hsl(0, 0%, 20%);
+            }
+        }
+    }
+    /* die Sidebar nach links */
+    .sidebar.sidebar-left {
+        order: -1;
+    }
+    /* Sidebar verstecken */
+    .sidebar.hide {
+        flex: 0 0 0px;
+        padding: 0;
+    }
+    .sidebar {
+        overflow: hidden;
+    }
+}

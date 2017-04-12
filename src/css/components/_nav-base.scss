@@ -11,7 +11,7 @@ Base styles that apply to all menus
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background: rgba(100, 100, 100, 1);
+    background: #333;
 }
 
 .menu li a {
@@ -21,6 +21,6 @@ Base styles that apply to all menus
     padding: .6em 1em;
     &:hover,
     &:focus {
-        background: rgba(29, 29, 29, .5);
+        background: #111;
     }
 }

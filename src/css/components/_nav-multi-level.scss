@@ -11,9 +11,14 @@
 
 @media screen and (min-width: 30em) {
     /* Liste Ebene 1 */
-    .multi-level-nav ul {}
+    .multi-level-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .multi-level-nav li {
         position: relative;
+        flex: 1 0 auto;
     }
     li.has-children>a {
         padding-right: 0;
@@ -26,10 +31,12 @@
     }
     /* Liste Ebene 2 bekommt .toggled-on per JS */
     .multi-level-nav ul .toggled-on {
-        display: block;
+        display: flex;
     }
     /* Listenelemente in Ebene 2 */
-    .multi-level-nav ul ul li {}
+    .multi-level-nav ul ul li {
+        flex: 1 1 auto;
+    }
     /* Ebene 1, Button mit Untermenü */
     .dropdown-toggle {
         margin: 0;

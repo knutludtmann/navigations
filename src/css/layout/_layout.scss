@@ -7,6 +7,9 @@ Layouts
     padding: 0 1em;
 }
 
+
+/* 52*16 = 832px */
+
 @media screen and (min-width: 52em) {
     .centered {
         max-width: 52em;
@@ -26,5 +29,6 @@ img {
     display: block;
     border: 0;
     max-width: 100%;
+    width: 100%;
     height: auto;
 }

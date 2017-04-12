@@ -3,7 +3,10 @@ Accessibility
 --------------------------------------------*/
 
 
-/* Text meant only for screen readers */
+/* Text meant only for screen readers 
+   based on HTML5 Boilerplate:
+   github.com/h5bp/html5-boilerplate/issues/194#issuecomment-564745
+*/
 
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);

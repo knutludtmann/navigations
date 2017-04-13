@@ -19,6 +19,7 @@ Base styles that apply to all menus
     text-decoration: none;
     color: white;
     padding: .6em 1em;
+    white-space: nowrap;
     &:hover,
     &:focus {
         background: #111;

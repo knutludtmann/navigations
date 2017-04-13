@@ -2,6 +2,10 @@
 Typography
 ----------------------------------------------------*/
 
+html {
+    font-size: 100%;
+}
+
 body,
 button,
 input,
@@ -9,14 +13,13 @@ select,
 textarea {
     color: #404040;
     font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1.5;
 }
 
 p {
     margin-bottom: 1.5em;
 }
-
 
 b,
 strong {
@@ -41,7 +44,7 @@ address {
 pre {
     background: #eee;
     font-family: "Courier 10 Pitch", Courier, monospace;
-    font-size: 15px;
+    font-size: 1em;
     font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 1.6em;
@@ -57,17 +60,15 @@ var {
     font: 15px Monaco, Consolas, "Andyle Mono", "DejaVu Sans Mono", monospace;
 }
 
-
 abbr,
 acronym {
     border-bottom: 1px dotted #666;
     cursor: help;
 }
 
-
 mark,
 ins {
-    backgrounf: #fff9c0;
+    background: #fff9c0;
     text-decoration: none;
 }
 
@@ -95,7 +96,3 @@ small {
 big {
     font-size: 125%;
 }
-
-
-
-

@@ -31,6 +31,18 @@ body {
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
 }
 
+@media (pointer: coarse) {
+    .button {
+        border: 1px dashed red;
+    }
+}
+
+@media (pointer: fine) {
+    .button {
+        border: 1px dashed blue;
+    }
+}
+
 .card-content {
     padding: 1.4em;
 }
@@ -42,7 +54,7 @@ body {
 }
 
 .card-content p {
-    font-size: 95%;
+    @include font-size($p-font-sizes);
 }
 
 

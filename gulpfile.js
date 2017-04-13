@@ -21,7 +21,7 @@ gulp.task('sass', function() {
         .pipe(sass.sync({
             includePaths: ['node_modules/susy/sass'],
             noCache: true,
-            outputStyle: 'compressed'
+            outputStyle: 'expanded'
         }).on('error', sass.logError))
 
     .pipe(autoprefixer({

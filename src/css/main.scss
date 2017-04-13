@@ -1,4 +1,12 @@
 /*--------------------------------------------
+utilities
+---------------------------------------------*/
+
+@import "utilities/accessibility";
+@import "utilities/settings";
+@import "utilities/mixins";
+
+/*--------------------------------------------
 base
 ---------------------------------------------*/
 
@@ -10,12 +18,6 @@ layout
 ---------------------------------------------*/
 
 @import "layout/layout";
-
-/*--------------------------------------------
-utilities
----------------------------------------------*/
-
-@import "utilities/accessibility";
 
 /*--------------------------------------------
 components
@@ -38,6 +40,6 @@ components
 
 @import "page/holy-grail";
 
-/* */
+/* mixed */
 
-@import "page/holygrail-card-mixednav.scss";
+@import "page/holygrail-card-mixednav";

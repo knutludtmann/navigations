@@ -17,6 +17,8 @@
 .sidebar {
     padding: .5em 1.4em 1em;
     background: hsl(0, 0%, 80%);
+    transition: flex .5s ease-in-out, padding .5s ease-in-out, color .2s ease-in-out .4s;
+    overflow: hidden;
 }
 
 .example-menu ul {

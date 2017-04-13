@@ -31,11 +31,15 @@
         order: -1;
     }
     /* Sidebar verstecken */
-    .sidebar.hide {
-        flex: 0 0 0px;
-        padding: 0;
-    }
     .sidebar {
-        overflow: hidden;
+        &.hide {
+            flex: 0 0 0px;
+            padding: 0;
+            transition: color .2s ease-in-out, flex .5s ease-in-out .3s, padding .5s ease-in-out .3s;
+            color: hsla(0, 0%, 0%, 0);
+            a {
+                color: hsla(0, 0%, 0%, 0);
+            }
+        }
     }
 }

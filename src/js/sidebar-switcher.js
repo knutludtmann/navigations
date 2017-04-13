@@ -14,5 +14,13 @@
 
         $('.sidebar').toggleClass('hide');
 
+        if ($(this).find('i').hasClass('fa-arrow-circle-right')) {
+            $(this).find('i').removeClass('fa-arrow-circle-right');
+            $(this).find('i').addClass('fa-arrow-circle-left');
+        } else {
+            $(this).find('i').addClass('fa-arrow-circle-right');
+            $(this).find('i').removeClass('fa-arrow-circle-left');
+        }
+
     });
 })(jQuery);

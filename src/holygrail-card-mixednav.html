@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox - Holy Grail, Card Layout and Mixed Nav</title>
+    <meta name="description" content="Flexbox - Holy Grail, Card Layout and Mixed Nav">
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Zum Inhalt springen</a>
+    <div class="outer-wrap">
+        <header class="pagehead pagehead--holygrail">
+            <div class="sidebar-switcher">
+                Sidebar:
+                <button class="sidebar-left-toggle">
+                   <i class="fa fa-align-left"></i><span class="screen-reader-text">Sidebar nach link</span>
+               </button>
+
+                <button class="sidebar-right-toggle">
+                   <i class="fa fa-align-right"></i><span class="screen-reader-text">Sidebar nach rechts</span>
+               </button>
+
+                <button class="sidebar-hide-toggle">
+                   <i class="fa fa-arrow-circle-right"></i><span class="screen-reader-text">Sidebar aus- und einschalten</span>
+               </button>
+            </div>
+            <!-- .sidebar-switcher -->
+
+            <div class="centered">
+                <h1 class="site-title">Flexbox - Holy Grail, Card Layout and Mixed Nav</h1>
+            </div>
+            <!-- .centred -->
+            <nav class="main-menu">
+                <div class="nav-mixed menu">
+                    <nav id="multi-level-nav" class="multi-level-nav menu" role="navigation">
+
+                        <ul>
+                            <li><a href="#">Startseite</a></li>
+
+                            <li class="has-children">
+                                <a href="#">Kochen
+                                <button class="dropdown-toggle" aria-expanded="false">
+                                    <span class="screen-reader-text">Untermenü öffnen</span>
+                                </button>
+                            </a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Koch&nbsp;mieten</a></li>
+                                    <li><a href="">Catering</a></li>
+                                    <li><a href="">Restaurant</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <a href="#">Kurse
+                                <button class="dropdown-toggle" aria-expanded="false">
+                                    <span class="screen-reader-text">Untermenü öffnen</span>
+                                </button>
+                            </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Kursübersicht</a></li>
+                                    <li><a href="#">Registrieren</a></li>
+                                    <li><a href="#">Das Frühstück</a></li>
+                                    <li><a href="#">Das Mittagessen</a></li>
+                                    <li><a href="#">Das Abendessen</a></li>
+                                    <li><a href="#">Einkaufen</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Über&nbsp;uns</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+
+                    </nav>
+                    <!-- #multi-level-nav .multi-level-nav -->
+                    <nav id="social-menu" class="social-menu menu" role="navigation">
+                        <ul>
+                            <li><a href="https://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                            <li><a href="https://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                            <li><a href="https://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                            <li><a href="https://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                            <li><a href="https://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                        </ul>
+                    </nav>
+                    <!-- #social-menu .social-menu -->
+                </div>
+                <!-- nav-mixed -->
+            </nav>
+        </header>
+        <!-- .pagehead -->
+        <div id="content" class="content">
+            <main class="main-area">
+
+                <section class="cards">
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Der Bananenvogel</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestias, maiores, sunt, consequuntur officia, mollitia sit iure autem quis nihil totam assumenda quia eos porro. Deleniti mollitia numquam aut. Consequatur.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Das ist keine süße Überraschung</h2>
+                                <p>Aut molestias, maiores, sunt, mollitia sit iure autem quis nihil totam assumenda quia eos porro. Deleniti mollitia numquam aut. Consequatur.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Morbi ipsum arcu</h2>
+                                <p>Damit das Projekt gleich starten kann benutze einfach etwas Lorem ipsum - Blind-, Füll-, Dummy-, Nachahmungs-, Platzhaltertext. Generiere einfach soviel Lorem Ipsum Text wie du brauchst, kopiere und füge ihn in dein Layout
+                                    als vorübergehenden Platzhalter ein. Somit sieht das Projekt ein Stückchen vollständiger aus als zuvor. Viel Spaß dabei.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Health ist gut und vor allem Lorem</h2>
+                                <p>Kopiere und füge ihn in dein Layout als vorübergehenden Platzhalter ein.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Noch einer ist hier</h2>
+                                <p>Jedes Beispiel ist als reines Text- oder Worddokument (in .zip Format) verfügbar. Damit das Projekt gleich starten kann benutze einfach etwas Lorem ipsum - Blind-, Füll-, Dummy-, Nachahmungs-, Platzhaltertext.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Süße Überraschung</h2>
+                                <p>Aut molestias, maiores, sunt, mollitia sit iure autem quis nihil totam assumenda quia eos porro. Deleniti mollitia numquam aut. Consequatur.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+
+                    <article class="card">
+                        <a href="#">
+                            <figure>
+                                <img src="http://placehold.it/900x600" alt="A banan that looks linke a bird">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Morbi ipsum arcu</h2>
+                                <p>Damit das Projekt gleich starten kann benutze einfach etwas Lorem ipsum - Blind-, Füll-, Dummy-, Nachahmungs-, Platzhaltertext. Generiere einfach soviel Lorem Ipsum Text wie du brauchst, kopiere und füge ihn in dein Layout
+                                    als vorübergehenden Platzhalter ein. Somit sieht das Projekt ein Stückchen vollständiger aus als zuvor. Viel Spaß dabei.</p>
+                            </div>
+                            <!-- .card-conentent -->
+                        </a>
+                    </article>
+                    <!-- .card -->
+                </section>
+                <!-- .cards -->
+
+            </main>
+            <aside class="sidebar">
+                <div class="squish-container">
+                    <h3>Explore the Demos:</h3>
+                    <nav class="example-menu">
+                        <ul>
+                            <li><a href="#">Flexbox Menus</a></li>
+                            <li><a href="#">Card Layouts</a></li>
+                            <li><a href="#">Holy Grail</a></li>
+                            <li><a href="#">All together</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .example-menu -->
+                </div>
+                <!-- squish-container -->
+            </aside>
+            <!-- .sidebar -->
+        </div>
+        <!-- #content .content -->
+
+        <footer class="footer-area">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum velit quae hic, voluptatum sed alias iste odio sequi minima fugit deserunt, labore reiciendis qui nesciunt adipisci, sunt doloribus delectus.</p>
+        </footer>
+    </div>
+    <!-- .outer-wrap -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/sidebar-switcher.js"></script>
+    <script type="text/javascript" src="js/menu-toggle.js"></script>
+
+</body>
+
+</html>

@@ -42,9 +42,11 @@
 }
 
 .footer-area {
-    padding: .4em 1em;
-    text-align: center;
-    background: hsl(0, 0%, 75%);
+    &:not(:empty) {
+        padding: .4em 1em;
+        text-align: center;
+        background: hsl(0, 0%, 75%);
+    }
 }
 
 

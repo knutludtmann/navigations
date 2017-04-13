@@ -18,9 +18,13 @@ body {
     margin-bottom: 2em;
 }
 
-.card a {
-    color: black;
-    text-decoration: none;
+.card {
+    a {
+        color: black;
+        text-decoration: none;
+        max-width: 99.99%;
+        /* Workaround für IE. 100% funktionieren nicht! */
+    }
 }
 
 .card:hover {
@@ -55,6 +59,8 @@ body {
         flex: 0 1 calc(50% - .5em);
         /* 0 = flex grow, mit bezug auf den dritten wert "calc(33% - 1em)" ist kein wachsen erlaub */
         /* 1 = flex shrink, mit bezug auf den dritten wert "calc(33% - 1em)" ist schrumpfen erlaubt */
+        flex-basis: calc(50% - 0.5em);
+        /* IE 10 / IE 11 versteht flex shorthand nicht richtig daher flex-basis ausschreiben */
         margin-bottom: 1em;
         display: flex;
         /* hiermit werden die a zu flexitems und die stretchen vertikal und horizontal */
@@ -67,6 +73,8 @@ body {
     }
     .card {
         flex: 0 1 calc(33% - .4em);
+        flex-basis: calc(33% - 0.5em);
+        /* IE 10 / IE 11 versteht flex shorthand nicht richtig daher flex-basis ausschreiben */
         margin-bottom: 2em;
         /* 0 = flex grow, mit bezug auf den dritten wert "calc(33% - 1em)" ist kein wachsen erlaub */
         /* 1 = flex shrink, mit bezug auf den dritten wert "calc(33% - 1em)" ist schrumpfen erlaubt */
